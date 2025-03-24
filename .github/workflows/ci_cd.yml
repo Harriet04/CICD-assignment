@@ -82,6 +82,8 @@ jobs:
 
 
 
-    # Step 8: Push docker image to dockerhub
-    ####
+    # Step 9: Push docker image to dockerhub
+        - name: Push Docker Image
+          run: docker push ${{ secrets.DOCKERUSER_NAME }}/backend_flask:latest
+  
     
